@@ -5,14 +5,14 @@ M = 4; N = 8. -> 30
 
 
 int calc_summ(int m, int n) {
-    if (m == n - 1)
+    if (m == n)
         return m; 
 
     return m + calc_summ(m + 1, n);
 }
 
 int M = 1;
-int N = 5;
+int N = 15;
 
 int result = 0;
 result = calc_summ(M, N);
